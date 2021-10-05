@@ -2,29 +2,24 @@
 
 namespace App\Repositories;
 
-use App\Models\Students;
+use App\Models\OtherOption;
 use App\Repositories\BaseRepository;
 
 /**
- * Class StudentsRepository
+ * Class OtherOptionRepository
  * @package App\Repositories
- * @version October 5, 2021, 10:17 am UTC
+ * @version October 5, 2021, 10:16 am UTC
 */
 
-class StudentsRepository extends BaseRepository
+class OtherOptionRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'Firstname',
-        'Middlename',
-        'Lastname',
-        'Birthdate',
-        'Gender',
+        'Spot_name',
         'Address',
-        'Citizenship',
-        'Religion'
+        'Payment'
     ];
 
     /**
@@ -42,6 +37,6 @@ class StudentsRepository extends BaseRepository
      **/
     public function model()
     {
-        return Students::class;
+        return OtherOption::class;
     }
 }

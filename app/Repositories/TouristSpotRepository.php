@@ -2,29 +2,24 @@
 
 namespace App\Repositories;
 
-use App\Models\Students;
+use App\Models\TouristSpot;
 use App\Repositories\BaseRepository;
 
 /**
- * Class StudentsRepository
+ * Class TouristSpotRepository
  * @package App\Repositories
- * @version October 5, 2021, 10:17 am UTC
+ * @version October 5, 2021, 10:19 am UTC
 */
 
-class StudentsRepository extends BaseRepository
+class TouristSpotRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'Firstname',
-        'Middlename',
-        'Lastname',
-        'Birthdate',
-        'Gender',
-        'Address',
-        'Citizenship',
-        'Religion'
+        'Tourist_spot',
+        'description',
+        'Expenses'
     ];
 
     /**
@@ -42,6 +37,6 @@ class StudentsRepository extends BaseRepository
      **/
     public function model()
     {
-        return Students::class;
+        return TouristSpot::class;
     }
 }

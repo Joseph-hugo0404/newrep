@@ -1,0 +1,37 @@
+.container{
+    margin-top: 10%;
+}
+.card-custome{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(238, 238, 238, 0.125);
+}
+.card-custome::before{
+    position: absolute;
+    content: '';
+    width: 80%;
+    height: 220%;
+    background-color: rgba(250, 248, 249, 0.7);
+    top: -50%;
+    left:-100%;
+    z-index: 1;
+    transform: rotate(25deg);
+    transform-origin: center top 0;
+    transition: .5s;
+}
+.card-custome:hover:before{
+    left: 10%;
+}
+
+/* remove border from modal */
+
+.remove:focus{
+    outline: none;
+    border: none;
+}
+.remove{
+    outline: none;
+    border: none;
+}

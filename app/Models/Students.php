@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class Students
  * @package App\Models
- * @version September 15, 2021, 5:54 am UTC
+ * @version October 5, 2021, 10:17 am UTC
  *
  * @property string $Firstname
  * @property string $Middlename
@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  */
 class Students extends Model
 {
-  //  use SoftDeletes;
+    //use SoftDeletes;
 
     use HasFactory;
 

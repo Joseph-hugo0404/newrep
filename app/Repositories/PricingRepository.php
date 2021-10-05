@@ -2,29 +2,23 @@
 
 namespace App\Repositories;
 
-use App\Models\Students;
+use App\Models\Pricing;
 use App\Repositories\BaseRepository;
 
 /**
- * Class StudentsRepository
+ * Class PricingRepository
  * @package App\Repositories
- * @version October 5, 2021, 10:17 am UTC
+ * @version October 4, 2021, 4:02 pm UTC
 */
 
-class StudentsRepository extends BaseRepository
+class PricingRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'Firstname',
-        'Middlename',
-        'Lastname',
-        'Birthdate',
-        'Gender',
-        'Address',
-        'Citizenship',
-        'Religion'
+        'Product_name',
+        'Price'
     ];
 
     /**
@@ -42,6 +36,6 @@ class StudentsRepository extends BaseRepository
      **/
     public function model()
     {
-        return Students::class;
+        return Pricing::class;
     }
 }

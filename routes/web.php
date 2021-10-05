@@ -27,3 +27,9 @@ Route::get('/home', [
 
 
 Route::resource('students', App\Http\Controllers\StudentsController::class);
+
+
+Route::resource('touristSpots', App\Http\Controllers\TouristSpotController::class);
+
+
+Route::resource('otherOptions', App\Http\Controllers\OtherOptionController::class);
