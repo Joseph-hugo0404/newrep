@@ -4,7 +4,7 @@
 <div class="d-flex flex-row">
 
     <div class="container col-sm m-1 p-2">
-        <img class="img-fluid" src="{{asset('res/img1.png')}}" alt="">
+        <img class="img-fluid" src="{{asset('sources/image1.png')}}" alt="">
         <div class="container card-text">
             <strong>Brand</strong>: ASUS
         </div>

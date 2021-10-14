@@ -33,3 +33,12 @@ Route::resource('touristSpots', App\Http\Controllers\TouristSpotController::clas
 
 
 Route::resource('otherOptions', App\Http\Controllers\OtherOptionController::class);
+
+
+Route::resource('posts', App\Http\Controllers\PostsController::class);
+
+Route::post('/likes/like', [App\Http\Controllers\LikesController::class, 'like'])->name('likes.like');
+
+Route::get('/likes/make-like', [App\Http\Controllers\LikesController::class, 'makelike'])->name('likes.make-like');
+
+Route::resource('likes', App\Http\Controllers\LikesController::class);
