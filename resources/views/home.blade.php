@@ -46,7 +46,7 @@
         function like(id) {
             let count = 0;
             $.ajax({
-                url : '/likes/assess-like',
+                url : '/likes/make-like',
                 type : 'GET',
                 data : {
                     post_id : id,
@@ -54,10 +54,9 @@
                 },
                 success : function(result) {
                     var data = JSON.parse(result);
-                        
-                    console.log(data);
-
                     
+                    console.log(data)
+
                     if(data['result'] == 'liked'){
                         $.ajax({
                             url : '/likes/like',
