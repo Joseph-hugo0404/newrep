@@ -176,6 +176,7 @@ class LikesController extends AppBaseController
                 Likes::where('post_id', $request['post_id'])
                         ->where('user_id', $request['user_id'])
                         ->delete();
+                        console.log(result);
 
                 return json_encode(['result' => 'unliked']);
             }
